@@ -1,0 +1,50 @@
+
+  <!-- <div class="container"></div> -->
+  <div id="main">
+    <h1 id="title">Referred Coach Ledger</h1>
+  <table  id="feeds">
+  
+    <thead>
+            <tr >
+                <th  *ngFor = "let col of columns">
+                  {{col}}
+                </th>
+            </tr>
+     </thead>
+  
+     <tbody>
+     <tr *ngFor = "let feed of feeds ; let i = index">
+                <td >
+                  {{i+1 }}
+                </td>
+                <td >
+                  {{feed['coachName']}}
+                </td>
+                <td >
+                  {{feed['dateJoined']}}
+                </td>
+                <td >
+                  {{feed['email']}}
+                </td>
+                <td >
+                  {{feed['referralLink']}}
+                </td>
+                <td >
+                  {{feed['referrorEmail']}}
+                </td>
+                <td >
+                  {{feed['referrorName']}}
+                </td>
+        </tr>
+     </tbody>
+  
+  </table>
+  </div>
+  
+  <div id="bottom">
+  <h2>END</h2>
+  </div>
+  
+  
+  
+              
